@@ -1,9 +1,0 @@
-<html>
-<head>
-<title>my website</title>
-</head>
-<body>
-<h1> welcome to my first website</h1>
-<h2>fk u</h2>
-</body>
-</html>
