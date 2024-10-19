@@ -1,0 +1,104 @@
+.wave-text {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    animation: wave 2s infinite ease-in-out;
+    color: blue;
+}
+
+h1::before {
+    content: "★";
+    margin-right: 10px;
+    color: red;
+}
+
+h1::after {
+    content: "★";
+    margin-left: 10px;
+    color: red;
+}
+
+/* Keyframes for waving text */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+}
+
+.project-img {
+    width: 150px; 
+    height: auto;
+    float: right; 
+    margin-right: 20px;
+    margin-bottom: 10px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Places the video behind the content */
+}
+
+body {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+hr {
+    height: 5px; 
+    background: linear-gradient(to right, white, red); 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space around the hr */}
+
+.hr2 {
+    height: 10px; 
+    background: linear-gradient(to right, white, blue); 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space around the hr */
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+p {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.p2 {
+    animation: fadeIn 8s ease-in-out;
+}
+
+.p3 {
+    animation: fadeIn 16s ease-in-out;
+}
+
+.p4 {
+    animation: fadeIn 32s ease-in-out;
+}
+
