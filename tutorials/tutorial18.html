@@ -1,0 +1,96 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Room Reservation Form</title>
+<link rel="icon" href="logo.png" type="image/png">
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+<div class="container" style="width: 60%; border: 2px solid black; padding: 20px; background-color: #B0E0E6;">
+    <h2 style="text-align: center;">Room Reservations</h2>
+
+    <!-- Personal Details Section -->
+    <div class="section" style="border: 2px solid black; margin: 15px 0; padding: 10px;">
+        <h3 style="margin: 0; color: #00A1D6; font-weight: bold; text-decoration: underline; font-size: 1.2em;">Personal Details</h3>
+        <div class="form-group" style="display: flex; justify-content: space-between; margin: 10px 0;">
+            <label for="fullName" style="flex: 1; margin-right: 10px; text-align: right;">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required style="flex: 2; padding: 5px; border: 1px solid black;">
+            <label for="icNo" style="flex: 1; margin-right: 10px; text-align: right;">IC No.:</label>
+            <input type="text" id="icNo" name="icNo" required style="flex: 2; padding: 5px; border: 1px solid black;">
+        </div>
+        <div class="form-group" style="display: flex; justify-content: space-between; margin: 10px 0;">
+            <label for="email" style="flex: 1; margin-right: 10px; text-align: right;">Email Address:</label>
+            <input type="email" id="email" name="email" required style="flex: 2; padding: 5px; border: 1px solid black;">
+            <label for="contactNo" style="flex: 1; margin-right: 10px; text-align: right;">Contact No.:</label>
+            <input type="tel" id="contactNo" name="contactNo" required style="flex: 2; padding: 5px; border: 1px solid black;">
+        </div>
+    </div>
+
+    <!-- Reservations Section -->
+    <div class="section" style="border: 2px solid black; margin: 15px 0; padding: 10px;">
+        <h3 style="margin: 0; color: #00A1D6; font-weight: bold; text-decoration: underline; font-size: 1.2em;">Reservations</h3>
+        <div class="form-group" style="display: flex; justify-content: space-between; margin: 10px 0;">
+            <!-- Column 1 -->
+            <div class="column" style="flex: 1; display: flex; flex-direction: column; padding: 0 10px;">
+                <label for="numRooms" style="margin-bottom: 5px;">Number of Room(s):</label>
+                <select id="numRooms" name="numRooms" style="padding: 5px; border: 1px solid black;">
+                    <option value="">- Selection -</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="numAdults" style="margin-bottom: 5px;">Number of Adult(s):</label>
+                <select id="numAdults" name="numAdults" style="padding: 5px; border: 1px solid black;">
+                    <option value="">- Selection -</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="numChildren" style="margin-bottom: 5px;">Number of Children:</label>
+                <select id="numChildren" name="numChildren" style="padding: 5px; border: 1px solid black;">
+                    <option value="">- Selection -</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+
+                <label for="checkIn" style="margin-bottom: 5px;">Check-in Date:</label>
+                <input type="date" id="checkIn" name="checkIn" required style="padding: 5px; border: 1px solid black;">
+
+                <label for="checkOut" style="margin-bottom: 5px;">Check-out Date:</label>
+                <input type="date" id="checkOut" name="checkOut" required style="padding: 5px; border: 1px solid black;">
+
+                <label>Room Preference:</label>
+                <input type="checkbox" id="deluxe" name="roomPreference" value="Deluxe" style="margin: 0;">
+                <label for="deluxe" style="display: inline; margin-left: 5px;">Deluxe</label>
+                <input type="checkbox" id="suite" name="roomPreference" value="Suite" style="margin: 0;">
+                <label for="suite" style="display: inline; margin-left: 5px;">Suite</label>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="column" style="flex: 1; display: flex; flex-direction: column; padding: 0 10px;">
+                <label>Payment Method:</label>
+                <input type="radio" id="cash" name="paymentMethod" value="Cash" style="margin: 0;">
+                <label for="cash" style="display: inline; margin-left: 5px;">Cash</label>
+                <input type="radio" id="tng" name="paymentMethod" value="TNG" style="margin: 0;">
+                <label for="tng" style="display: inline; margin-left: 5px;">TNG</label>
+
+                <label for="specialRequests" style="margin-top: 20px;">Special Requests:</label>
+                <textarea id="specialRequests" name="specialRequests" rows="6" style="padding: 5px; border: 1px solid black;"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit and Reset Buttons -->
+    <div class="form-actions" style="text-align: center; margin-top: 20px;">
+        <input type="submit" value="Submit" style="padding: 10px 20px; margin: 0 10px; border: 1px solid black; background-color: #00A1D6; color: #fff; cursor: pointer;">
+        <input type="reset" value="Reset" style="padding: 10px 20px; margin: 0 10px; border: 1px solid black; background-color: #00A1D6; color: #fff; cursor: pointer;">
+    </div>
+</div>
+
+</body>
+</html>
