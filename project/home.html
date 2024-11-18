@@ -1,0 +1,325 @@
+<html>
+<head>
+    <title>HOME</title>
+    <link rel="icon" href="anakin.jpg" type="image/jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .wave-text {
+            font-size: 40px;
+            font-weight: bold;
+            display: inline-block;
+            animation: wave 2s infinite ease-in-out;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-10px);
+            }
+            40% {
+                transform: translateY(10px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+            80% {
+                transform: translateY(10px);
+            }
+        }
+
+        p {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Ribbon section */
+.ribbon {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, yellow, blue, red); /* Gradient from yellow to blue to red */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: calc(100vw + 20%);
+    margin-left: -10%;
+}
+
+.ribbon a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ribbon a:hover {
+    background-color: #4CAF50;
+}
+
+        .columns-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .columns-container .column:nth-child(1):hover {
+            background-color: yellow;
+            color: white;
+        }
+
+        .columns-container .column:nth-child(2):hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .columns-container .column:nth-child(3):hover {
+            background-color: red;
+            color: white;
+        }
+
+        .btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .project-img {
+            width: 200px;
+            height: 100px;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-img:hover {
+            transform: scale(1.1);
+        }
+
+        body {
+            color: black;
+            margin: 0;
+            padding: 0 10%;
+            background-image: url('bg_home.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keep background fixed */
+            position: relative;
+font-size: 20px;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            z-index: -1;
+        }
+
+        hr {
+            height: 5px;
+            background: linear-gradient(to right, white, green);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        .hr2 {
+            height: 10px;
+            background: linear-gradient(to right, white, green);
+            border-radius: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ribbon">
+        <a href="destinations.html">Destinations</a>
+        <a href="cuisine.html">Cuisine</a>
+    </div>
+
+    <h1 class="title">
+        <span class="wave-text yellow">Welcome</span> 
+        <span class="wave-text blue">to</span> 
+        <span class="wave-text red">Colombia</span>
+    </h1>
+    <p>A vibrant and diverse country where every corner tells a story of rich culture, stunning landscapes, and warm, welcoming people. From the lush, green Amazon rainforest and the majestic Andes mountains to the pristine beaches of the Caribbean and the lively streets of Bogotá, Colombia is a treasure trove of unforgettable experiences waiting to be discovered.</p>
+
+    <hr class="hr2">
+
+    <p>
+        <img src="img1.gif" alt="JavaScript Logo" class="project-img">
+        Colombia, located in the heart of South America, is a country of contrasts and wonders. Its rich history and culture are reflected in every corner, from colonial towns to bustling cities. Colombia is a place where music, gastronomy, and art intertwine to tell stories of resilience, joy, and passion.
+    </p>
+    <hr>
+
+    <p>
+        <img src="geography.JPG" alt="JavaScript Code" class="project-img">
+        The geography of Colombia is equally fascinating: with coastlines on both the Atlantic and Pacific oceans, and landscapes ranging from the tropical Amazon rainforest to the snow-capped peaks of the Andes, the country is a must-visit destination for nature lovers and adventure seekers.
+    </p>
+    <hr>
+
+    <div class="columns-container">
+        <div class="column">
+            <h2 style="color: #cce336;">Culture</h2>
+          
+            <p>Colombia’s vibrant culture is a rich blend of indigenous, Spanish, and African influences, making it one of the most colorful and lively countries in Latin America.</p>
+        </div>
+
+        <div class="column">
+            <h2 style="color: #1c1cc7;">Nature</h2>
+       
+            <p>From the Andes mountains to the Amazon rainforest, Colombia boasts breathtaking landscapes and diverse ecosystems that are home to countless species of flora and fauna.</p>
+        </div>
+
+        <div class="column">
+            <h2 style="color: #a30505;">Cuisine</h2>
+          
+            <p>Colombian cuisine is a flavorful journey of local ingredients and traditional recipes, featuring arepas, empanadas, bandeja paisa, and some of the world’s finest coffee.</p>
+        </div>
+    </div>
+<br><br><br>
+
+ <h1 class="title">
+        <span class="wave-text yellow">join</span> 
+        <span class="wave-text yellow">us!</span> 
+        <span class="wave-text blue">fill</span>
+        <span class="wave-text blue">this</span>
+        <span class="wave-text red">form</span>
+    </h1>
+
+<div class="container" style="width: 100%; border: 2px solid black; padding: 15px; background-color: #B0E0E6;">
+    <h2 style="text-align: center; font-size: 1.5em;">Room Reservations</h2>
+
+    <!-- Personal Details Section -->
+    <div class="section" style="border: 2px solid black; margin: 10px 0; padding: 8px;">
+        <h3 style="margin: 0; color: #FCD116; font-weight: bold; text-decoration: underline; font-size: 1.1em;">Personal Details</h3>
+        <div class="form-group" style="display: flex; justify-content: space-between; margin: 8px 0;">
+            <label for="fullName" style="flex: 1; margin-right: 8px; text-align: right;">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required style="flex: 2; padding: 4px; border: 1px solid black;">
+            <label for="icNo" style="flex: 1; margin-right: 8px; text-align: right;">IC No.:</label>
+            <input type="text" id="icNo" name="icNo" required style="flex: 2; padding: 4px; border: 1px solid black;">
+        </div>
+        <div class="form-group" style="display: flex; justify-content: space-between; margin: 8px 0;">
+            <label for="email" style="flex: 1; margin-right: 8px; text-align: right;">Email Address:</label>
+            <input type="email" id="email" name="email" required style="flex: 2; padding: 4px; border: 1px solid black;">
+            <label for="contactNo" style="flex: 1; margin-right: 8px; text-align: right;">Contact No.:</label>
+            <input type="tel" id="contactNo" name="contactNo" required style="flex: 2; padding: 4px; border: 1px solid black;">
+        </div>
+    </div>
+
+    <!-- Reservations Section -->
+    <div class="section" style="border: 2px solid black; margin: 10px 0; padding: 8px;">
+        <h3 style="margin: 0; color: #FCD116; font-weight: bold; text-decoration: underline; font-size: 1.1em;">Reservations</h3>
+        <div class="form-group" style="display: flex; justify-content: space-between; margin: 8px 0;">
+            <!-- Column 1 -->
+            <div class="column" style="flex: 1; display: flex; flex-direction: column; padding: 0 8px;">
+                <label for="numRooms" style="margin-bottom: 5px; font-size: 0.9em;">Destination:</label>
+                <select id="numRooms" name="numRooms" style="padding: 4px; border: 1px solid black; font-size: 0.9em;">
+                    <option value="">- Selection -</option>
+                    <option value="1">Bogota</option>
+                    <option value="2">Cartagena</option>
+                    <option value="3">San Andres</option>
+                    <option value="4">Medellin</option>
+                    <option value="5">Amazon Forest</option>
+                    <option value="6">Cali</option>
+                </select>
+
+                <label for="numAdults" style="margin-bottom: 5px; font-size: 0.9em;">Number of people(s):</label>
+                <select id="numAdults" name="numAdults" style="padding: 4px; border: 1px solid black; font-size: 0.9em;">
+                    <option value="">- Selection -</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="acommodation" style="margin-bottom: 5px; font-size: 0.9em;">Type of accomodation:</label>
+                <select id="acommodation" name="acommodation" style="padding: 4px; border: 1px solid black; font-size: 0.9em;">
+                    <option value="">- Selection -</option>
+                    <option value="0">Apartament</option>
+                    <option value="1">Cottage</option>
+                    <option value="2">Sea house</option>
+                    <option value="3">Hotel</option>
+                </select>
+
+                <label for="checkIn" style="margin-bottom: 5px; font-size: 0.9em;">Check-in Date:</label>
+                <input type="date" id="checkIn" name="checkIn" required style="padding: 4px; border: 1px solid black; font-size: 0.9em;">
+
+                <label for="checkOut" style="margin-bottom: 5px; font-size: 0.9em;">Check-out Date:</label>
+                <input type="date" id="checkOut" name="checkOut" required style="padding: 4px; border: 1px solid black; font-size: 0.9em;">
+
+                <label style="font-size: 0.9em;">Room Preference:</label>
+                <input type="checkbox" id="deluxe" name="roomPreference" value="Deluxe" style="margin: 0;">
+                <label for="deluxe" style="display: inline; margin-left: 5px; font-size: 0.9em;">Deluxe</label>
+                <input type="checkbox" id="suite" name="roomPreference" value="Suite" style="margin: 0;">
+                <label for="suite" style="display: inline; margin-left: 5px; font-size: 0.9em;">Suite</label>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="column" style="flex: 1; display: flex; flex-direction: column; padding: 0 8px;">
+                <label style="font-size: 0.9em;">Payment Method:</label>
+                <input type="radio" id="cash" name="paymentMethod" value="Cash" style="margin: 0;">
+                <label for="cash" style="display: inline; margin-left: 5px; font-size: 0.9em;">Cash</label>
+                <input type="radio" id="tng" name="paymentMethod" value="TNG" style="margin: 0;">
+                <label for="tng" style="display: inline; margin-left: 5px; font-size: 0.9em;">TNG</label>
+
+                <label for="specialRequests" style="margin-top: 15px; font-size: 0.9em;">Special Requests:</label>
+                <textarea id="specialRequests" name="specialRequests" rows="5" style="padding: 4px; border: 1px solid black; font-size: 0.9em;"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- Submit and Reset Buttons -->
+    <div class="form-actions" style="text-align: center; margin-top: 15px;">
+        <input type="submit" value="Submit" style="padding: 8px 16px; margin: 0 8px; border: 1px solid black; background-color: #FCD116; color: #fff; cursor: pointer; font-size: 0.9em;">
+        <input type="reset" value="Reset" style="padding: 8px 16px; margin: 0 8px; border: 1px solid black; background-color: #FCD116; color: #fff; cursor: pointer; font-size: 0.9em;">
+    </div>
+</div>
+
+</body>
+</html>

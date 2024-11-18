@@ -1,0 +1,167 @@
+
+<html ">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="icon" href="anakin.jpg" type="image/jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+            margin: 0;
+            padding: 0;
+            background-color: #63cbeb;
+
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0b89b0;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .destinations-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .destination {
+            background-color: white;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .destination:hover {
+            transform: scale(1.05);
+        }
+
+        .destination img {
+            width: 100%;
+            height: auto;
+        }
+
+        .destination-content {
+            padding: 20px;
+        }
+
+        .destination-content h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 0 0 10px;
+        }
+
+        .destination-content p {
+            font-size: 16px;
+            color: #666;
+text-align: center;
+            line-height: 1.5;
+        }
+
+.destination-content .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+        .destination-content .btn:hover {
+            background-color: #63cbeb;
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="header">
+        <h1>Explore Colombian Destinations</h1>
+<div class="destination">
+<a href="home.html" class="btn">HOME</a>
+</div>
+        <p>Discover the most iconic places to visit in Colombia</p>
+    </div>
+
+   
+    <div class="destinations-container">
+       
+        <div class="destination">
+            <img src="cartagena.jpg" alt="Cartagena">
+            <div class="destination-content">
+                <h2>Cartagena</h2>
+                <p>Experience the colorful colonial architecture, vibrant nightlife, and beautiful Caribbean beaches in Cartagena, a UNESCO World Heritage site.</p>
+                <a href="cartagena.html" class="btn">Learn More</a>
+            </div>
+        </div>
+
+       
+        <div class="destination">
+            <img src="medellin.jpg" alt="Medellín">
+            <div class="destination-content">
+                <h2>Medellín</h2>
+                <p>Known as the “City of Eternal Spring,” Medellín offers a perfect blend of urban innovation, green spaces, and cultural festivals.</p>
+                <a href="medellin.html" class="btn">Learn More</a>
+            </div>
+        </div>
+
+       
+        <div class="destination">
+            <img src="bogota.jpg" alt="Bogotá">
+            <div class="destination-content">
+                <h2>Bogotá</h2>
+                <p>The capital city, Bogotá, is a cultural hub filled with museums, historical sites, and a thriving gastronomic scene that reflects Colombia's diversity.</p>
+                <a href="bogota.html" class="btn">Learn More</a>
+            </div>
+        </div>
+
+      
+        <div class="destination">
+            <img src="san_andres.jpg" alt="San Andrés">
+            <div class="destination-content">
+                <h2>San Andrés</h2>
+                <p>Famous for its turquoise waters and coral reefs, San Andrés Island is a paradise for beach lovers and water sports enthusiasts.</p>
+                <a href="san_andres.html" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="destination">
+            <img src="cali.jpg" alt="Cali">
+            <div class="destination-content">
+                <h2>Cali</h2>
+                <p>Known as the “Salsa Capital of the World,” Cali is a vibrant city where you can dance, explore coffee plantations, and enjoy scenic views.</p>
+                <a href="cali.html" class="btn">Learn More</a>
+            </div>
+        </div>
+
+
+        <div class="destination">
+            <img src="amazon.jpg" alt="Amazon Rainforest">
+            <div class="destination-content">
+                <h2>Amazon Rainforest</h2>
+                <p>Explore the biodiversity of the Amazon, home to an incredible array of flora, fauna, and indigenous communities.</p>
+                <a href="amazon.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
