@@ -1,0 +1,291 @@
+<html>
+<head>
+    <title>Form</title>
+    <link rel="icon" href="anakin.jpg" type="image/jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         <style>
+        .wave-text {
+            font-size: 40px;
+            font-weight: bold;
+            display: inline-block;
+            animation: wave 2s infinite ease-in-out;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        @keyframes wave {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-10px);
+            }
+            40% {
+                transform: translateY(10px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+            80% {
+                transform: translateY(10px);
+            }
+        }
+
+        p {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Ribbon section */
+.ribbon {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, yellow, blue, red); /* Gradient from yellow to blue to red */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: calc(100vw + 20%);
+    margin-left: -10%;
+}
+
+.ribbon a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.ribbon a:hover {
+    background-color: #4CAF50;
+}
+
+        .columns-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .columns-container .column:nth-child(1):hover {
+            background-color: yellow;
+            color: white;
+        }
+
+        .columns-container .column:nth-child(2):hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .columns-container .column:nth-child(3):hover {
+            background-color: red;
+            color: white;
+        }
+
+        .btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .project-img {
+            width: 200px;
+            height: 100px;
+            margin-right: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-img:hover {
+            transform: scale(1.1);
+        }
+
+        body {
+            color: black;
+            margin: 0;
+            padding: 0 10%;
+            background-image: url('bg_home.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keep background fixed */
+            position: relative;
+font-size: 20px;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.5);
+            z-index: -1;
+        }
+
+        hr {
+            height: 5px;
+            background: linear-gradient(to right, white, green);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        .hr2 {
+            height: 10px;
+            background: linear-gradient(to right, white, green);
+            border-radius: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+
+        .redirect-button {
+            display: block;
+            margin: 50px auto;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: gray;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .redirect-button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">
+        <span class="wave-text yellow">join</span> 
+        <span class="wave-text yellow">us!</span> 
+        <span class="wave-text blue">fill</span>
+        <span class="wave-text blue">this</span>
+        <span class="wave-text red">form</span>
+    </h1>
+
+    <form action="confirm.html" method="POST">
+        <div class="container" style="width: 100%; border: 2px solid black; padding: 15px; background-color: #B0E0E6;">
+            <h2 style="text-align: center; font-size: 1.5em;">Room Reservations</h2> 
+
+           
+            <div class="section" style="border: 2px solid black; margin: 10px 0; padding: 8px;">
+                <h3 style="margin: 0; color: #FCD116; font-weight: bold; text-decoration: underline; font-size: 1.1em;">Personal Details</h3>
+                <div class="form-group" style="display: flex; justify-content: space-between; margin: 8px 0;">
+                    <label for="fullName" style="flex: 1; margin-right: 8px; text-align: right;">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required style="flex: 2; padding: 4px; border: 1px solid black;">
+                    <label for="icNo" style="flex: 1; margin-right: 8px; text-align: right;">IC No.:</label>
+                    <input type="text" id="icNo" name="icNo" required style="flex: 2; padding: 4px; border: 1px solid black;">
+                </div>
+                <div class="form-group" style="display: flex; justify-content: space-between; margin: 8px 0;">
+                    <label for="email" style="flex: 1; margin-right: 8px; text-align: right;">Email Address:</label>
+                    <input type="email" id="email" name="email" required style="flex: 2; padding: 4px; border: 1px solid black;">
+                    <label for="contactNo" style="flex: 1; margin-right: 8px; text-align: right;">Contact No.:</label>
+                    <input type="tel" id="contactNo" name="contactNo" required style="flex: 2; padding: 4px; border: 1px solid black;">
+                </div>
+            </div>
+
+            <!-- The warnings that appear when a required field is not filled are part of the HTML5 form validation feature. This is achieved using the required attribute on the form inputs. Here's how it works: -->
+            <div class="section" style="border: 2px solid black; margin: 10px 0; padding: 8px;">
+                <h3 style="margin: 0; color: #FCD116; font-weight: bold; text-decoration: underline; font-size: 1.1em;">Reservations</h3>
+                <div class="form-group" style="display: flex; justify-content: space-between; margin: 8px 0;">
+                    <label for="destination" style="flex: 1; margin-right: 8px; text-align: right;">Destination:</label>
+                    <select id="destination" name="destination" required style="flex: 2; padding: 4px; border: 1px solid black;">
+                        <option value="">- Selection -</option>
+                        <option value="Bogota">Bogota</option>
+                        <option value="Cartagena">Cartagena</option>
+                        <option value="San Andres">San Andres</option>
+                        <option value="Medellin">Medellin</option>
+                        <option value="Amazon Forest">Amazon Forest</option>
+                        <option value="Cali">Cali</option>
+                    </select>
+                </div>
+                <div class="form-group" style="display: flex; justify-content: space-between; margin: 8px 0;">
+                    <label for="numPeople" style="flex: 1; margin-right: 8px; text-align: right;">Number of People:</label>
+                    <select id="numPeople" name="numPeople" required style="flex: 2; padding: 4px; border: 1px solid black;">
+                        <option value="">- Selection -</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                    </select>
+                </div>
+                <div class="form-group" style="display: flex; justify-content: space-between; margin: 8px 0;">
+                    <label for="checkIn" style="flex: 1; margin-right: 8px; text-align: right;">Check-In Date:</label>
+                    <input type="date" id="checkIn" name="checkIn" required style="flex: 2; padding: 4px; border: 1px solid black;">
+                    <label for="checkOut" style="flex: 1; margin-right: 8px; text-align: right;">Check-Out Date:</label>
+                    <input type="date" id="checkOut" name="checkOut" required style="flex: 2; padding: 4px; border: 1px solid black;">
+                </div>
+            </div>
+
+            
+            <div class="section" style="border: 2px solid black; margin: 10px 0; padding: 8px;">
+                <h3 style="margin: 0; color: #FCD116; font-weight: bold; text-decoration: underline; font-size: 1.1em;">Additional Services</h3>
+                <div class="form-group" style="margin: 8px 0;">
+                    <label><input type="checkbox" name="services" value="Breakfast"> Breakfast</label><br>
+                    <label><input type="checkbox" name="services" value="Airport Shuttle"> Airport Shuttle</label><br>
+                    <label><input type="checkbox" name="services" value="Guided Tour"> Guided Tour</label><br>
+                    <label><input type="checkbox" name="services" value="WiFi"> High-Speed WiFi</label>
+                </div>
+            </div>
+
+            
+            <div class="section" style="border: 2px solid black; margin: 10px 0; padding: 8px;">
+                <h3 style="margin: 0; color: #FCD116; font-weight: bold; text-decoration: underline; font-size: 1.1em;">Payment</h3>
+                <div class="form-group" style="margin: 8px 0;">
+                    <label><input type="radio" name="payment" value="Credit Card" required> Credit Card</label><br>
+                    <label><input type="radio" name="payment" value="PayPal"> PayPal</label><br>
+                    <label><input type="radio" name="payment" value="Bank Transfer"> Bank Transfer</label>
+                </div>
+            </div>
+
+           
+            <div class="button-container">
+                <button type="button" class="back-button" onclick="window.location.href='home.html'">Go Back to Home</button>
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

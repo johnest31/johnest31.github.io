@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>Cartagena</title>
+    <link rel="icon" href="anakin.jpg" type="image/jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('cartagena_b.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0 10%;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text contrast */
+            z-index: -1;
+        }
+
+        h1 {
+            color: #63cbeb;
+            font-size: 3em;
+            font-family: 'Cursive';
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        p.special {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #63cbeb;
+            color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+            width: 100%;
+            max-width: 750px;
+            height: auto;
+            margin: 10px 0;
+            border: 5px solid #63cbeb;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            display: inline-block;
+            background-color: #63cbeb;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #1a73e8;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="window.location.href='home.html';">Go to Home</button>
+        <button onclick="window.location.href='destinations.html';">Destinations</button>
+        <h1>Cartagena de Indias</h1>
+        <p>
+            <strong>Cartagena de Indias</strong> is a vibrant city where history meets tropical charm. Known for its colorful colonial architecture, cobblestone streets, and lively plazas, this <strong>UNESCO</strong> World Heritage Site offers a journey back in time. Stroll through the walled Old Town, explore the imposing Castillo San Felipe de Barajas, or relax on the pristine beaches of nearby Islas del Rosario.
+        </p>
+        <p>
+            Beyond its historical allure, Cartagena buzzes with modern culture. Enjoy world-class cuisine, sip on refreshing tropical drinks, or dance the night away to the rhythms of salsa and champeta. Whether you're seeking adventure, romance, or relaxation, Cartagena promises an unforgettable experience filled with warmth and authenticity.
+        </p>
+
+        <p class="special">
+            <strong>Old Town (Ciudad Amurallada)</strong><br>
+            Wander through cobblestone streets lined with colorful colonial buildings, charming plazas, and boutique shops. Don’t miss Plaza Santo Domingo and Plaza de los Coches for iconic landmarks.
+            <br><img src="cartagena_c.jpg" alt="Old Town">
+        </p>
+
+        <p class="special">
+            <strong>Castillo San Felipe de Barajas</strong><br>
+            This majestic fortress is a testament to Cartagena’s colonial defense system. Explore its tunnels and enjoy panoramic views of the city.
+            <br><img src="cartagena_m.jpg" alt="Castillo San Felipe">
+        </p>
+
+        <p class="special">
+            <strong>Playa Blanca</strong><br>
+            A picturesque beach on Barú Island, perfect for a relaxing day soaking up the sun and swimming in turquoise waters.
+            <br><img src="cartagena_p.jpg" alt="Playa Blanca">
+        </p>
+    </div>
+
+    <footer>
+        &copy; 2024 Cartagena Travel Guide
+    </footer>
+</body>
+</html>
